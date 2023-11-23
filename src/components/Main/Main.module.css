@@ -1,0 +1,305 @@
+.circle_red {
+    position: absolute;
+    left: -250px;
+    display: block;
+    width: 311px;
+    height: 311px;
+    flex-shrink: 0;
+
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961A1A;
+    filter: blur(196px);
+    z-index: 1000;
+}
+
+
+
+.content {
+    max-width: 1440px;
+    position: relative;
+    margin-top: 90px;
+
+}
+
+.content_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.styled_fonts>h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    background-color: #000000;
+    background-image: linear-gradient(92deg, #cb9343 27.14%, #ff004c 121.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.left_side_title {
+    text-align: left;
+    max-width: 400px;
+
+}
+
+.left_side_title>p {
+    margin-top: 30px;
+    max-width: 275px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.right_side {
+    text-align: right;
+}
+
+.right_side_title>h3 {
+
+
+
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 40px;
+}
+
+.title {
+    max-width: 291px;
+}
+
+.styled_fonts {
+    background: var(--gradient, linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.grid_item {
+    max-width: 139px;
+    text-align: right;
+}
+
+.grid_item>h3 {
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.grid_item:nth-child(1) h3::before {
+    content: "Виджеты";
+}
+
+.grid_item:nth-child(2) h3::before {
+    content: "Dashboard";
+}
+
+.grid_item:nth-child(3) h3::before {
+    content: "Skype Аудит";
+}
+
+.grid_item:nth-child(4) h3::before {
+    content: "35 дней";
+}
+
+.grid_item>p {
+    margin-top: 6px;
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right_side_btn {
+    margin-top: 61px;
+
+    width: 262px;
+    height: 61px;
+    background: #4077F3;
+
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E4E5EA;
+
+
+
+
+
+}
+
+@media (max-width: 320px) {
+
+
+    .circle_red {
+        display: none;
+    }
+
+    .content {
+        max-width: 320px;
+        background-image: url('../../assets/icons/bg.png');
+        margin-top: 0px;
+    }
+
+    .left_side_title>h1 {
+        color: var(--light-text, #E4E5EA);
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .left_side_title>p {
+        color: var(--light-text, #E4E5EA);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .styled_fonts>h1 {
+        color: #E4E5EA;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+
+        background: var(--gradient, linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .right_side_btn {
+        display: none;
+    }
+
+    .content_wrapper {
+        padding: 40px 39px 46px 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        padding-left: 15px;
+        grid-column-gap: 1px;
+        grid-row-gap: 14px;
+    }
+
+    .grid_item>p {
+        display: none;
+
+    }
+
+    .grid_item>h3 {
+        position: relative;
+        text-align: left;
+        color: var(--light-text, #E4E5EA);
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.65px;
+        text-transform: uppercase;
+    }
+
+    .grid_item>h3::after {
+        display: block;
+        position: absolute;
+        left: -15px;
+        top: 7px;
+        content: '';
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    }
+
+
+
+    .right_side_title>h3 {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: var(--light-text, #E4E5EA);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .grid_item:nth-child(1) h3::before {
+        content: "Skype Аудит";
+    }
+
+    .grid_item:nth-child(2) h3::before {
+        content: "30 Виджетов";
+    }
+
+    .grid_item:nth-child(3) h3::before {
+        content: "Dashboard";
+    }
+
+    .grid_item:nth-child(4) h3::before {
+        content: "Месяц AmoCRM";
+    }
+
+}
